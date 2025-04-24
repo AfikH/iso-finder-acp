@@ -1,0 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Gothic&family=League+Spartan:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* <weight>: Use a value from 100 to 900 */
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
