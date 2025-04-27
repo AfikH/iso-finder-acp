@@ -1,5 +1,5 @@
-import AppBreadcrumb from "@/components/app/AppBreadcrumb";
-import AppSidebar from "@/components/app/AppSidebar";
+import AppBreadcrumb from "@/components/app/layout/mainLayout/AppBreadcrumb";
+import AppSidebar from "@/components/app/layout/mainLayout/AppSidebar";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { Outlet } from "react-router-dom";
 

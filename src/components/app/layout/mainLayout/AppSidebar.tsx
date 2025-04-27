@@ -10,8 +10,8 @@ import {
   SidebarMenuButton,
   SidebarMenuItem,
 } from "@/components/ui/sidebar";
-import ThemeModeToggle from "./ThemeModeToggle";
 import { NavLink } from "react-router-dom";
+import ThemeModeToggle from "@/components/app/ThemeModeToggle";
 
 // Menu items.
 const items = [
