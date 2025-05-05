@@ -14,27 +14,41 @@ import { MoreHorizontal } from "lucide-react";
 
 type Payment = {
   id: string;
-  amount: number;
-  status: "pending" | "processing" | "success" | "failed";
-  email: string;
+  name: string;
+  category: string;
+  country: string;
+  territory: string;
+  city: string;
 };
 
 const columns: ColumnDef<Payment>[] = [
   {
-    accessorKey: "email",
-    header: ({ column }) => <DataTableColumnHeader column={column} title="Email" />,
+    accessorKey: "id",
+    header: ({ column }) => <DataTableColumnHeader column={column} title="Id" />,
   },
   {
-    accessorKey: "status",
-    header: ({ column }) => <DataTableColumnHeader column={column} title="Status" />,
+    accessorKey: "name",
+    header: ({ column }) => <DataTableColumnHeader column={column} title="Name" />,
   },
   {
-    accessorKey: "amount",
-    header: ({ column }) => <DataTableColumnHeader column={column} title="Amount" />,
+    accessorKey: "category",
+    header: ({ column }) => <DataTableColumnHeader column={column} title="Category" />,
+  },
+  {
+    accessorKey: "country",
+    header: ({ column }) => <DataTableColumnHeader column={column} title="Country" />,
+  },
+  {
+    accessorKey: "territory",
+    header: ({ column }) => <DataTableColumnHeader column={column} title="Territory" />,
+  },
+  {
+    accessorKey: "city",
+    header: ({ column }) => <DataTableColumnHeader column={column} title="City" />,
   },
   {
     accessorKey: "action",
-    header: ({ column }) => "Action",
+    header: () => "Action",
     cell: ({ row }) => {
       const payment = row.original;
 
@@ -61,21 +75,25 @@ const columns: ColumnDef<Payment>[] = [
 
 const data: Payment[] = [
   {
-    id: "128ed52f",
-    amount: 100,
-    status: "pending",
-    email: "m@example.com",
+    id: "1",
+    name: "Company Name",
+    category: "Manufacturer",
+    country: "United States",
+    territory: "California",
+    city: "Los Angeles",
   },
   {
-    id: "728ed52f",
-    amount: 150,
-    status: "failed",
-    email: "a@example.com",
+    id: "2",
+    name: "Company Name",
+    category: "Manufacturer",
+    country: "United States",
+    territory: "California",
+    city: "Los Angeles",
   },
 ];
 
-const Table = () => {
+const Companies = () => {
   return <DataTable columns={columns} data={data} />;
 };
 
-export default Table;
+export default Companies;

@@ -1,4 +1,4 @@
-import { Home, Table, Settings, ArrowUpCircleIcon } from "lucide-react";
+import { Home, Table, Settings, Blocks } from "lucide-react";
 
 import {
   Sidebar,
@@ -21,8 +21,8 @@ const items = [
     icon: Home,
   },
   {
-    title: "Table",
-    url: "/table",
+    title: "Companies",
+    url: "/companies",
     icon: Table,
   },
   {
@@ -40,8 +40,8 @@ const AppSidebar = ({ ...props }: React.ComponentProps<typeof Sidebar>) => {
           <SidebarMenuItem>
             <SidebarMenuButton asChild className="data-[slot=sidebar-menu-button]:!p-1.5">
               <a href="#">
-                <ArrowUpCircleIcon className="h-5 w-5" />
-                <span className="text-base font-semibold">Dash Template</span>
+                <Blocks className="h-5 w-5" />
+                <span className="text-base font-semibold">ISO Finder</span>
               </a>
             </SidebarMenuButton>
           </SidebarMenuItem>

@@ -3,7 +3,7 @@ import Home from "@/pages/Home";
 import NotFound from "@/pages/NotFound";
 import MainLayout from "@/components/app/layout/mainLayout";
 import { BreadcrumbHandle } from "@/components/app/layout/mainLayout/AppBreadcrumb";
-import Table from "@/pages/Table";
+import Companies from "@/pages/Companies";
 
 const browserRouter = createBrowserRouter([
   {
@@ -17,9 +17,9 @@ const browserRouter = createBrowserRouter([
         handle: { crumb: "Home" } satisfies BreadcrumbHandle,
       },
       {
-        path: "table",
-        element: <Table />,
-        handle: { crumb: "Table" } satisfies BreadcrumbHandle,
+        path: "companies",
+        element: <Companies />,
+        handle: { crumb: "Companies" } satisfies BreadcrumbHandle,
       },
     ],
   },
