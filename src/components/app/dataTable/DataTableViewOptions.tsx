@@ -15,7 +15,7 @@ export function DataTableViewOptions<TData>({ table }: DataTableViewOptionsProps
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size="default" className="ml-auto cursor-pointer lg:flex">
+        <Button variant="outline" size="default" className="cursor-pointer">
           <Settings2 />
           View
         </Button>
